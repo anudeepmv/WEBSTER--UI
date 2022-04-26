@@ -43,7 +43,10 @@ const login = (data) => {
 };
 
 
-
+const joined_activity_list = (UserId) => {
+    const instance = Instance();
+    return instance.get(`activity/user/${UserId}`);
+};
 
 
 
@@ -51,6 +54,6 @@ const login = (data) => {
 export default {
     signUp,
     login,
-
+    joined_activity_list
    
 }
