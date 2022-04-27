@@ -29,7 +29,10 @@ const Instance = () => {
 }
 
 
-
+const getActivity = (page) => {
+    const instance = Instance();
+    return instance.get(`activity?page=${page}&limit=10`);
+};
 
 const signUp = (data) => {
     const instance = Instance1();
@@ -41,7 +44,10 @@ const login = (data) => {
     const instance = Instance1();
     return instance.post(`login`,data);
 };
-
+const deleteActivity = (activityId) => {
+    const instance = Instance();
+    return instance.delete(`activity/${activityId}`);
+};
 
 const joined_activity_list = (UserId) => {
     const instance = Instance();
@@ -54,6 +60,8 @@ const joined_activity_list = (UserId) => {
 export default {
     signUp,
     login,
-    joined_activity_list
+    joined_activity_list,
+    getActivity,
+    deleteActivity
    
 }
