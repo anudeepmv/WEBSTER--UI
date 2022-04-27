@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import Auth from '../pages/auth';
+import MyEditor from '../component/ckEditors';
 
 test('renders learn react link', () => {
-  render(<Auth />);
+  render(<MyEditor />);
   const linkElement = screen.getByText(/Welcome to Gala/i);
   expect(linkElement).toBeInTheDocument();
 });

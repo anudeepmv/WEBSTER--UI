@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import Auth from '../pages/auth';
+import AdminDashboard from '../pages/adminDashbord/index';
 
 test('renders learn react link', () => {
-  render(<Auth />);
+  render(<AdminDashboard/>);
   const linkElement = screen.getByText(/Welcome to Gala/i);
   expect(linkElement).toBeInTheDocument();
 });
