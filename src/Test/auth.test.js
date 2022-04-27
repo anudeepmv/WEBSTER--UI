@@ -3,6 +3,6 @@ import Auth from '../pages/auth';
 
 test('renders learn react link', () => {
   render(<Auth />);
-  const linkElement = screen.getByText(/learn react/i);
+  const linkElement = screen.getByText(/Welcome to Gala/i);
   expect(linkElement).toBeInTheDocument();
 });
