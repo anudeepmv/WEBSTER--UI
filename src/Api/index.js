@@ -28,6 +28,10 @@ const Instance = () => {
     });
 }
 
+const joinedActivityparticipant = (activityId,data) => {
+    const instance = Instance();
+    return instance.post(`participate/${activityId}`,data);
+};
 
 const getActivity = (page) => {
     const instance = Instance();
@@ -45,23 +49,30 @@ const login = (data) => {
     return instance.post(`login`,data);
 };
 const deleteActivity = (activityId) => {
+
     const instance = Instance();
     return instance.delete(`activity/${activityId}`);
 };
 
 const joined_activity_list = (UserId) => {
+    
     const instance = Instance();
     return instance.get(`activity/user/${UserId}`);
 };
 
 
-
+const createactivity = (data) => {
+    const instance = Instance();
+    return instance.post(`activity`,data);
+};
 
 export default {
     signUp,
     login,
     joined_activity_list,
+    joinedActivityparticipant,
     getActivity,
-    deleteActivity
+    deleteActivity,
+    createactivity
    
 }
