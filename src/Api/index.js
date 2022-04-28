@@ -55,11 +55,14 @@ const deleteActivity = (activityId) => {
 };
 
 const joined_activity_list = (UserId) => {
-    
+
     const instance = Instance();
     return instance.get(`activity/user/${UserId}`);
 };
-
+const getOneActivity = (activityId) => {
+    const instance = Instance();
+    return instance.get(`activity/${activityId}`);
+};
 
 const createactivity = (data) => {
     const instance = Instance();
@@ -69,6 +72,7 @@ const createactivity = (data) => {
 export default {
     signUp,
     login,
+    getOneActivity,
     joined_activity_list,
     joinedActivityparticipant,
     getActivity,
