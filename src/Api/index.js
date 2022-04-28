@@ -74,11 +74,32 @@ const createactivity = (data) => {
     const instance = Instance();
     return instance.post(`activity`,data);
 };
+const room_initiate = (data) => {
+    const instance = Instance();
+    return instance.post(`room/initiate`,data);
+};
+
+const getgroupchat = (roomId,massage) => {
+    const instance = Instance();
+    return instance.get(`room/${roomId}`);
+};
+const groupchat = (roomId,data) => {
+    const instance = Instance();
+    return instance.post(`room/${roomId}/message`,data);
+};
+const deletChat = (messageId) => {
+    const instance = Instance();
+    return instance.delete(`message/${messageId}`);
+};
 
 export default {
     signUp,
     login,
     getOneActivity,
+    room_initiate,
+    groupchat,
+    getgroupchat,
+    deletChat,
     updateActivity,
     joined_activity_list,
     joinedActivityparticipant,
