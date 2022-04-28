@@ -13,3 +13,16 @@ test('renders learn react link', () => {
     expect(linkElement).toBeInTheDocument();
   });
   
+
+  it("should close drawer", async () => {
+    const { getByTestId, queryByTestId } = render(<Header />);
+  
+    fireEvent.click(getByTestId("menuButton"));
+    expect(getByTestId("drawer")).toBeVisible();
+  
+    fireEvent.click(getByTestId("closeButton"));
+    await waitForElementToBeRemoved(getByTestId("drawer"));
+  
+    expect(queryByTestId("drawer")).toBeNull();
+  
+  });
