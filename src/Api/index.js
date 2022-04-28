@@ -38,7 +38,10 @@ const signUp = (data) => {
     const instance = Instance1();
     return instance.post(`user`,data);
 };
-
+const joinedActivityparticipant = (activityId,data) => {
+    const instance = Instance();
+    return instance.post(`participate/${activityId}`,data);
+};
 
 const login = (data) => {
     const instance = Instance1();
@@ -54,12 +57,17 @@ const joined_activity_list = (UserId) => {
     return instance.get(`activity/user/${UserId}`);
 };
 
-
+const createactivity = (data) => {
+    const instance = Instance();
+    return instance.post(`activity`,data);
+};
 
 
 export default {
     signUp,
     login,
+    joinedActivityparticipant,
+    createactivity,
     joined_activity_list,
     getActivity,
     deleteActivity
