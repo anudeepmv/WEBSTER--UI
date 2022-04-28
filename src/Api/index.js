@@ -60,7 +60,9 @@ const joined_activity_list = (UserId) => {
     return instance.get(`activity/user/${UserId}`);
 };
 const getOneActivity = (activityId) => {
+
     const instance = Instance();
+    
     return instance.get(`activity/${activityId}`);
 };
 
