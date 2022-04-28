@@ -17,7 +17,6 @@ const Detail =()=>{
         useEffect(()=>{
         id&&
         Api.getOneActivity(id[3])
-        
         .then((res)=>{setActivity(res.data.data)
          
         })

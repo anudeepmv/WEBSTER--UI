@@ -111,7 +111,7 @@ return(
            {/* <p className='text-center subheadindLogin'>Please Sign in to your account</p> */}
            <div className='careerLoader' id='careerLoader' ></div>
            <form className='h-50 '
-         
+           className='loginForm'
             onSubmit={(e)=>{Login(e)}}
              >
   <div className="form-group">
