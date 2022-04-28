@@ -62,8 +62,12 @@ const joined_activity_list = (UserId) => {
 const getOneActivity = (activityId) => {
 
     const instance = Instance();
-    
+
     return instance.get(`activity/${activityId}`);
+};
+const updateActivity = (id,data) => {
+    const instance = Instance();
+    return instance.put(`activity/${id}`,data);
 };
 
 const createactivity = (data) => {
@@ -75,6 +79,7 @@ export default {
     signUp,
     login,
     getOneActivity,
+    updateActivity,
     joined_activity_list,
     joinedActivityparticipant,
     getActivity,
