@@ -19,16 +19,12 @@ useEffect(()=>{
 
 id&&
 Api.getOneActivity(id[3])
-
 .then((res)=>{setActivity(res.data.data)
 
 })
 .catch((err)=>{
-
   err&& alert('please try again')})
-
 },[id[3]])
-
   console.log('signle nactivity List',activity)
 
 return(
