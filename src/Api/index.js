@@ -61,13 +61,17 @@ const createactivity = (data) => {
     const instance = Instance();
     return instance.post(`activity`,data);
 };
-
+const getOneActivity = (activityId) => {
+    const instance = Instance();
+    return instance.get(`activity/${activityId}`);
+};
 
 export default {
     signUp,
     login,
     joinedActivityparticipant,
     createactivity,
+    getOneActivity,
     joined_activity_list,
     getActivity,
     deleteActivity
