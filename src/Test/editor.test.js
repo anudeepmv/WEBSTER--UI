@@ -1,3 +1,5 @@
+///Documentation for welcomin page
+///expect is used to search for a match
 import { render, screen } from '@testing-library/react';
 import MyEditor from '../component/ckEditors';
 
