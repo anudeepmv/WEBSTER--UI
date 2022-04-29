@@ -1,3 +1,4 @@
+///Formatted Documentation for various activities such as signup,login..
 import axios from 'axios'
 
 
