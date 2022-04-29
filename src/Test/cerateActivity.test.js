@@ -1,3 +1,4 @@
+///Documentation to create the activity list
 import { render, screen } from '@testing-library/react';
 import CreateActivity from '../pages/createActivity/index';
 
