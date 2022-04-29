@@ -3,6 +3,6 @@ import ActivityList from '../component/activity_page_list/index';
 
 test('renders learn react link', () => {
   render(< ActivityList/>);
-  const linkElement = screen.getByText(/Welcome to Gala/i);
+  const linkElement = screen.getByText(/Activity List/i);
   expect(linkElement).toBeInTheDocument();
 });
