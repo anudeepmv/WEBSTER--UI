@@ -1,3 +1,5 @@
+///Documentation for Details of the activity
+///Code is used for extracting the activit history and details of each activity
 import React ,{ useState,useEffect} from 'react'
 import Header from '../../header';
 import './detail.css'
