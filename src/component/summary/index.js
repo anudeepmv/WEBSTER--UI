@@ -1,3 +1,4 @@
+///The react is only used to accept the single props with data and returns a react element 
 import React ,{ useState,useEffect} from 'react'
 import Header from '../../header';
 import renderHTML from 'react-render-html';
