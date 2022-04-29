@@ -1,3 +1,6 @@
+///Formatted Documentation for Productivity
+///code for Product details within the page and product info
+///It shows the Activity of the product,images and activities
 import React ,{ useState,useEffect} from 'react'
 import { Col,Row,Card,Button } from 'react-bootstrap'
 import Header from '../../header';
