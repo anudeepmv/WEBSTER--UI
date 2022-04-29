@@ -1,3 +1,4 @@
+///It Displays the welcome page of the Project
 import { render, screen } from '@testing-library/react';
 import AdminDashboard from '../pages/adminDashbord/index';
 
