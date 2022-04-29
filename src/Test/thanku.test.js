@@ -1,3 +1,4 @@
+///Formatted documentation for the activity of final page
 import { render, screen } from '@testing-library/react';
 import Thanku from '../component/thanku/index'
 
