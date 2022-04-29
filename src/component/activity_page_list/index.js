@@ -1,3 +1,8 @@
+///Documentation for Activity joining 
+///Code is used to know the product information
+///return() is used to know the product information and the summary after successfully joining
+///react-router-dom is used for dynamic routing for our web app
+///usehistory() is used to access the history that I need to navigate by url
 import {useHistory,Link} from 'react-router-dom';
 import Api from '../../Api';
 const ActivityOption=(props)=> {
