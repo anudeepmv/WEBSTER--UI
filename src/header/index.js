@@ -1,3 +1,4 @@
+///Documentation for header and logout session
 import './header.css'
 import Icon from '../assets/icon.png'
 import { Link } from 'react-router-dom'
