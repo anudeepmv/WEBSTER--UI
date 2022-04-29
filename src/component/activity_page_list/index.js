@@ -1,3 +1,4 @@
+///Formatted code to see the activity history and list
 import {useHistory,Link} from 'react-router-dom';
 import Api from '../../Api';
 const ActivityOption=(props)=> {
