@@ -1,3 +1,4 @@
+///The documentation of the react bootstrap gives the more control over all functions on the each components
 import React,{useEffect,useState} from 'react'
 
 import { Card } from 'react-bootstrap'
