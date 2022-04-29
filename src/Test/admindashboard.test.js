@@ -1,3 +1,5 @@
+///Documentation for the admindashboard menu 
+///shows the menu and close options and welcome page
 import { render, screen, } from '@testing-library/react';
 import AdminDashboard from '../pages/adminDashbord/index';
 
