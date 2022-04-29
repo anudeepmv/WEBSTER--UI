@@ -1,3 +1,4 @@
+///Documentation for the user about the signup
 import { render, screen } from '@testing-library/react';
 import SignUp from '../pages/signUp';
 

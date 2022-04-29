@@ -1,3 +1,7 @@
+///The condition "originalFilePath != null”  and "originalFilePath.length() > 0”  must be true before the constructor method can execute.
+///2.    The condition "convertedFilePath != null " and "convertedFilePath.length() > 0”  must be true
+///@post-condition: The condition "result == true" must be true
+/// program by contract https://github.com/anudeepmv/WEBSTER--UI/issues/38
 import React ,{useEffect, useState} from 'react'
 import { Button} from 'react-bootstrap'
 import { Col,Row,Card } from 'react-bootstrap'
@@ -19,6 +23,11 @@ const SignUp =()=>{
    const CreateUser=(e)=>{
     e.preventDefault()
      const data= ({
+         /// @invariant ("email != null && email.length() > 0")
+         ///  @invariant ("password != null && password.length() > 0")
+         ///  @invariant ("phone != null && phone.length() > 0")
+         ///  @invariant ("first_name != null && first_name.length() > 0")
+         /// @invariant ("last_name != null && last_name.length() > 0")
       email:formValues.email ,
       password: formValues.password,
       phone: formValues.phone,
@@ -33,6 +42,7 @@ const SignUp =()=>{
         .then((res)=>{
           history.push('/')
         })
+       ///
         .catch((err)=>{
           if(err.msg==="Email Ram@mailinator.com is already taken"){
             alert('user already exist')
@@ -71,7 +81,7 @@ const SignUp =()=>{
       }else{
          x = document.getElementById("repassword");
       }
-  
+      ///  @ Invariant: The condition " text!= null”, “text.length() > 0”, “password!= null” and “password.length() > 0" must be true
       if (x.type === "password") {
         x.type = "text";
       } else {
@@ -87,7 +97,7 @@ return(
            <Col className='h-100 w-75 '>
            <Col className='loginform p-0 mt-4 ml-0 mr-0 '>
            <h5 className='text-center p-0 headindLogin'>Please Sign-up</h5>
-       
+       /// @ Invariant: The condition " text!= null”, “text.length() > 0”, “email!= null” and “email.length() > 0" must be true of a class whenever it is accessible to the client.
            <form className='signupForm'
             onSubmit={(e)=>{CreateUser(e)}}
              >
@@ -98,7 +108,7 @@ return(
                     required
                     onChange={onChange}
                     type="text" name='first_name'  className="form-control  input-highlgt border-top-0 border-right-0  border-left-0 "  aria-describedby="emailHelp" placeholder="Enter your First Name"/>
-                
+                /// @ Invariant: The condition " text!= null”, “text.length() > 0”, “last_name!= null” and “last_name.length() > 0" must be true of a class whenever it is accessible to the client.
                 </div><div className="form-group">
                     <label className='signupLabel'htmlFor="exampleInputEmail1 m-0">Last Name</label>
                     <input
@@ -162,7 +172,10 @@ return(
                 </div>
                  </Row>
 
-
+      /// @pre-condition:
+   ///    1.    The condition "password != null”  and "password.length() > 0”  must be true before the constructor method can execute.
+   ///    2.    The condition "password != null " and "password.length() > 0”  must be true before the setPassword() method can execute.
+    ///   @post-condition: The condition "result == true" must be true when setPassword() method finished executing.
                  <Row className='justify-content-between signUpRow'>
                 <div className="form-group">
                     <label className='signupLabel' htmlFor="exampleInputPassword1">Password:</label>
@@ -173,7 +186,9 @@ return(
                     name="password"
                     id='password'
                     placeholder="Enter your Password"
-                    
+                   /// @Requires("password != null && password.length() > 0")
+      /// @Ensures("result == true")
+       /// if wrong password if given it shows you for other try
                     />
                     <FontAwesomeIcon
                      toggle="#password-field" 
@@ -186,7 +201,7 @@ return(
                     <label className='m-0 wrongpswd'  id='wrongpswd'>Incorrect Password! Try again.</label>
                 </div>
                 
-                
+                /// enter the password again if user has entered the wrong password
                 <div className="form-group">
                     <label className='signupLabel' htmlFor="exampleInputPassword1">Retype your password</label>
                     <input type="password"
