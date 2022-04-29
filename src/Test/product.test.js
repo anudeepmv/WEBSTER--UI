@@ -1,3 +1,5 @@
+///Documentation for product activity 
+///Used test for testing the values
 import { render, screen } from '@testing-library/react';
 import Product from '../pages/production/index';
 
