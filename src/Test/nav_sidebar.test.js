@@ -1,3 +1,6 @@
+///Documentation for logging outform the session and adding activity
+///fireEvent is used in the code for initializing and dispatching the element
+///test() in the cod used for executing a search for a match 
 import { render, screen } from '@testing-library/react';
 import Header from '../header/index'
 import Sidebar from '../sidebar'
