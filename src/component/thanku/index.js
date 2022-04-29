@@ -1,3 +1,4 @@
+///Documentation of react where the program is to demonstrate the creation of functional components
 import React ,{ useState} from 'react'
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt, faSmile ,faSearch} from "@fortawesome/free-solid-svg-icons";
