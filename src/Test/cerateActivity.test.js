@@ -1,3 +1,4 @@
+///formatted documentation for creating the activity
 import { render, screen } from '@testing-library/react';
 import CreateActivity from '../pages/createActivity/index';
 
