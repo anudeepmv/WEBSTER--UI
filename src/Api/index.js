@@ -11,7 +11,6 @@ const Instance1 = () => {
         timeout: 60000,
     });
 }
-/// To access the token and authoroze the application token
 const Instance = () => {
     const token=localStorage.getItem('access_token')
     console.log('Token',token)

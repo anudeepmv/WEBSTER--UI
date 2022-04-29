@@ -7,7 +7,7 @@ import '@fortawesome/fontawesome-free';
 import ActivityOption from '../../component/activity_page_list'
 import Api from '../../Api';
 import {useHistory,Link} from 'react-router-dom';
-
+/// To create an alert message to signal from the list 
 const Summary =()=>{
   const [activity, setActivity] = useState([]);
   let url = window.location.pathname
