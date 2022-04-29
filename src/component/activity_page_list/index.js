@@ -1,3 +1,5 @@
+///Documentation for successfully joining into the activity
+///Code for extracting the userhistory
 import {useHistory,Link} from 'react-router-dom';
 import Api from '../../Api';
 const ActivityOption=(props)=> {
