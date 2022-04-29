@@ -1,3 +1,4 @@
+///Documentation to test the react components without relying
 import { render, screen } from '@testing-library/react';
 import Thanku from '../component/thanku/index'
 
