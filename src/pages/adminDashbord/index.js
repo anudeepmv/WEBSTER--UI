@@ -1,3 +1,6 @@
+///Documentation for various activities in admindashboard
+///history is used to extract the history using url
+///onchange is used because the value of the element is changed
 import React ,{ useState,useEffect} from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt, faGrin } from "@fortawesome/free-solid-svg-icons";
