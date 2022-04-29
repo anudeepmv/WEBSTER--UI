@@ -43,10 +43,7 @@ const signUp = (data) => {
     const instance = Instance1();
     return instance.post(`user`,data);
 };
-const updateActivity = (id,data) => {
-    const instance = Instance();
-    return instance.put(`activity/${id}`,data);
-};
+
 
 const login = (data) => {
     const instance = Instance1();
@@ -57,12 +54,7 @@ const resetpswd = (email,data) => {
     return instance.post(`forget-password/${email}`,data);
 };
 
-const createactivity = (data) => {
-    
-    const instance = Instance();
 
-    return instance.post(`activity`,data);
-};
 
 const getActivity = (page) => {
     const instance = Instance();
@@ -73,10 +65,7 @@ const getOneActivity = (activityId) => {
     return instance.get(`activity/${activityId}`);
 };
 
-const joinedActivityparticipant = (activityId,data) => {
-    const instance = Instance();
-    return instance.post(`participate/${activityId}`,data);
-};
+
 const ditachActivitybyadmin = (activityId,userid) => {
     const instance = Instance();
     return instance.delete(`participate/${activityId}/${userid}`);
@@ -92,23 +81,7 @@ const joined_activity_list = (UserId) => {
     return instance.get(`activity/user/${UserId}`);
 };
 
-const room_initiate = (data) => {
-    const instance = Instance();
-    return instance.post(`room/initiate`,data);
-};
 
-const getgroupchat = (roomId,massage) => {
-    const instance = Instance();
-    return instance.get(`room/${roomId}`);
-};
-const groupchat = (roomId,data) => {
-    const instance = Instance();
-    return instance.post(`room/${roomId}/message`,data);
-};
-const deletChat = (messageId) => {
-    const instance = Instance();
-    return instance.delete(`message/${messageId}`);
-};
 const uploadImg = (data) => {
     const instance = Instance();
     return instance.post(`ckeditor-gallery-upload/`,data);
@@ -147,7 +120,6 @@ const deletChat = (messageId) => {
 export default {
     signUp,
     login,
-
     createactivity,
     getActivity,
     ditachActivitybyadmin,
