@@ -1,3 +1,5 @@
+///Documentation for notificatins 
+///shallow is usedto copy an object
 import { render, screen } from '@testing-library/react';
 import Auth from '../pages/auth';
 
