@@ -1,4 +1,4 @@
-
+///Documentation of the loader is used to load the classes of the java program into the memory when it is required.
     const API_URL = "http://localhost:8081/api/1.0/ckeditor-gallery-upload";
     function uploadAdapter(loader) {
       return {
