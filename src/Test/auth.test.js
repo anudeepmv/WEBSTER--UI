@@ -1,3 +1,4 @@
+///Documentation of shallow is used to copy of an object from an original object
 import { render, screen } from '@testing-library/react';
 import Auth from '../pages/auth';
 
