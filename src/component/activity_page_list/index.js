@@ -1,3 +1,4 @@
+///Formatted code to see the activity history and list
 ///Documentation for Activity joining 
 ///Code is used to know the product information
 ///return() is used to know the product information and the summary after successfully joining

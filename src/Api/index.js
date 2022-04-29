@@ -1,3 +1,4 @@
+///Formatted Documentation for various activities such as signup,login..
 ///Documentation for updating and see the activity
 import axios from 'axios'
 
