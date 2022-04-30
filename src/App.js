@@ -1,3 +1,4 @@
+///formatted documentation on the appilication interface 
 import { Redirect, Route, Switch, BrowserRouter } from "react-router-dom";
 import React, { Component } from 'react';
 import AdminDashboard from './pages/adminDashbord'
