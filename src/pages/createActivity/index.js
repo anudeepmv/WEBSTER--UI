@@ -1,3 +1,6 @@
+///Formatted documentation for creatingActivity,adding items,uploading item
+///used alert to give alerts
+///code for deleting images
 import React ,{ useState} from 'react'
 import { Modal, Button, Form, Col ,Card,Row} from "react-bootstrap";
 import './createActivity.css'
