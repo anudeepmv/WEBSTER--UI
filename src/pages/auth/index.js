@@ -1,3 +1,4 @@
+///formatted documentation on the login page and path location
 import React ,{useEffect, useState} from 'react'
 import './auth.css';
 import {
