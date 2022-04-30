@@ -1,5 +1,6 @@
 ///Documentation for writing in the editor
-///fetch is an API that used for accessing and manipulating parts 
+///fetch is an API that used for accessing and manipulating parts
+/// https://github.com/anudeepmv/WEBSTER--UI/issues/13
 import React from "react";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
