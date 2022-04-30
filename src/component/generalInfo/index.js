@@ -1,3 +1,5 @@
+///formatted documentation on the height, weight, width values
+///retrieving the title info and also value of it 
 import React,{useEffect,useState} from 'react'
 
 import { Card } from 'react-bootstrap'
