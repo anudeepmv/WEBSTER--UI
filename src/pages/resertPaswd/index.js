@@ -1,3 +1,5 @@
+///formatted documentation on restting the password
+///retrieving the history and hide the password
 import React ,{useEffect, useState} from 'react'
 
 import {
