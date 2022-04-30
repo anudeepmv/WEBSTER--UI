@@ -1,3 +1,4 @@
+/// formatted documentation on the loading the data 
 import React ,{ useState,useEffect} from 'react'
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt, faGrin ,faSearch} from "@fortawesome/free-solid-svg-icons";
